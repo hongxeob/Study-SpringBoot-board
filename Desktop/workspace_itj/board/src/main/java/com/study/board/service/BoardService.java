@@ -23,4 +23,8 @@ public class BoardService {
     public Board boardView(Integer id){
         return boardRepositoy.findById(id).get();
     }
+
+    public void boardDelete(Integer id){
+        boardRepositoy.deleteById(id);
+    }
 }
