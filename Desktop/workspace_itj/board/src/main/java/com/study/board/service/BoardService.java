@@ -27,4 +27,5 @@ public class BoardService {
     public void boardDelete(Integer id){
         boardRepositoy.deleteById(id);
     }
+
 }
