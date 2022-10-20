@@ -19,4 +19,8 @@ public class BoardService {
     public List<Board> boardList() {
         return boardRepositoy.findAll();
     }
+
+    public Board boardView(Integer id){
+        return boardRepositoy.findById(id).get();
+    }
 }
