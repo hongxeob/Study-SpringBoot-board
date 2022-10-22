@@ -64,7 +64,7 @@ public class BoardController {
         boardTemp.setContent(board.getContent());
         boardService.write(boardTemp,file);
         model.addAttribute("message","글 수정이 완료 되었습니다.");
-        model.addAttribute("searchUrl", "/board/list");
+        model.addAttribute("modifyUrl", "/board/view?id=" + id);
         return "message";
     }
 
