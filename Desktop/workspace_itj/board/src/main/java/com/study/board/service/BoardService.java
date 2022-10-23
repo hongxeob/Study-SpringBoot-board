@@ -40,4 +40,10 @@ public class BoardService {
         boardRepositoy.deleteById(id);
     }
 
+    public Page<Board> boardSearchList(String searchKeyword,Pageable pageable){
+        return boardRepositoy.findByTitleContaining(searchKeyword,pageable);
+
+    }
+
+
 }
